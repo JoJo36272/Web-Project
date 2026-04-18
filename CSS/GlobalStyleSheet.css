@@ -1,0 +1,369 @@
+/*
+Name: John
+Date: 10/04/2026
+*/
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-container,
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+body {
+    margin: auto;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+#headbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    background-color: rgb(206, 159, 233);
+}
+
+.topnav a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    font-size: 1.3rem;
+    float: right;
+    background-color: rgb(206, 159, 233);
+}
+
+main {
+    background-color: rgb(251, 237, 255);
+}
+
+.logo {
+    height: 5rem;
+    width: 5rem;
+}
+
+#navbar {
+    padding-top: 0.5rem;
+}
+
+#hero {
+    padding-top: 1rem;
+    height: 30rem;
+    width: 50rem;
+    display: block;
+    margin: auto;
+    border-radius: 10%;
+}
+
+
+.organizer {
+    height: 25rem;
+    width: 25rem;
+    padding-bottom: 0.5rem;
+    border-radius: 10%;
+    display: block;
+    margin: auto;
+}
+
+.organizecenter {
+    text-align: center;
+    font-weight: bold;
+}
+
+#address {
+    grid-column: span 1/2;
+}
+
+#Contact {
+    grid-column: 6/7;
+}
+
+#Links {
+    grid-column: 11/12;
+}
+
+form {
+    background-color: rgb(228, 182, 235);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 1em;
+    width: 50%;
+    margin: auto;
+}
+
+#plannerImg {
+    height: 22rem;
+    width: 22rem;
+    border-radius: 10%;
+}
+
+label {
+    width: 16em;
+    float: left;
+}
+
+table,
+th,
+td {
+    border: solid 2px rgb(41, 7, 49);
+    text-align: center;
+    border-collapse: collapse;
+    padding: 0.3rem;
+}
+
+/*making the table scrollable so on mobile you can see it all*/
+#timeTable {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+span {
+    color: red;
+}
+
+.winImg {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 5%;
+}
+
+.grid-container>* {
+    grid-column: span 12;
+}
+
+#location {
+    grid-column: 2/11;
+}
+
+#planner {
+    margin: auto;
+    padding-bottom: 1rem;
+    grid-column: 2/12;
+}
+
+#PastText {
+    text-align: center;
+}
+
+#WinnerImg1,
+#WinnerImg2,
+#WinnerImg3,
+#WinnerImg4 {
+    grid-column: 2/12;
+    padding-bottom: 0.5rem;
+}
+
+.socialImg {
+    height: 20rem;
+    width: 22rem;
+    border: solid black 0.5rem;
+}
+
+#facebook,
+#instagram,
+#twitter,
+#tictoc {
+    grid-column: 3/11;
+}
+
+#linkhead {
+    text-align: center;
+}
+
+#gallarydiv {
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*tablet styles */
+@media(min-width: 600px) {
+    #Welcome {
+        grid-column: 2/12;
+    }
+
+    #location {
+        grid-column: 3/11;
+    }
+
+    #history {
+        padding-top: 1rem;
+        grid-column: 2/12;
+    }
+
+    #address {
+        grid-column: 2/4;
+    }
+
+    #Contact {
+        grid-column: 6/7;
+    }
+
+    #Links {
+        grid-column: 10/12;
+    }
+
+    #timeTable {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    #info {
+        grid-column: 2/11;
+    }
+
+    #planner {
+        grid-column: 2/11;
+    }
+
+    #ruleMain {
+        grid-column: 2/6;
+    }
+
+    #ruleFood {
+        grid-column: 7/12;
+    }
+
+    #ruleProps {
+        grid-column: 4/9;
+    }
+
+    #contestRules {
+        grid-column: 2/6;
+    }
+
+    #SignUp {
+        grid-column: 7/12;
+    }
+
+    #WinnerImg1,
+    #WinnerImg3 {
+        grid-column: 2/6;
+    }
+
+    #WinnerImg2,
+    #WinnerImg4 {
+        grid-column: 8/12;
+    }
+
+    #facebook,
+    #instagram,
+    #twitter,
+    #tictoc {
+        grid-column: span 6;
+        padding-bottom: 1REM;
+    }
+
+
+
+}
+
+/*Desktop styles */
+@media(min-width: 900px) {
+    #Welcome {
+        grid-column: 2/6;
+    }
+
+    #location {
+        grid-column: 8/12;
+    }
+
+    #Eventorganizer {
+        text-align: center;
+        display: flex;
+    }
+
+    #history {
+        padding-top: 1rem;
+        grid-column: 2/12;
+        text-align: center;
+    }
+
+    #address {
+        grid-column: 3/4;
+    }
+
+    #Contact {
+        grid-column: 6/7;
+    }
+
+    #Links {
+        grid-column: 10/11;
+    }
+
+    #timeTable {
+        grid-column: 4/10;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    #info {
+        grid-column: 2/6;
+    }
+
+    #planner {
+        grid-column: 8/12;
+    }
+
+    #ruleMain {
+        grid-column: 1/5;
+    }
+
+    #ruleFood {
+        grid-column: 5/9;
+    }
+
+    #ruleProps {
+        grid-column: 9/12;
+    }
+
+    #WinnerImg1,
+    #WinnerImg3 {
+        grid-column: 3/6;
+    }
+
+    #WinnerImg2,
+    #WinnerImg4 {
+        grid-column: 9/12;
+    }
+
+    #contestRules {
+        grid-column: 2/6;
+    }
+
+    #SignUp {
+        grid-column: 8/12;
+    }
+
+    #facebook {
+        grid-column: 1/3;
+    }
+    #instagram {
+        grid-column: 4/6;
+    }
+    #twitter {
+        grid-column: 8/10;
+    }
+    #tictoc {
+        grid-column: 11/13;
+    }
+
+
+}

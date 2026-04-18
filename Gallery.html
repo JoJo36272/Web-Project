@@ -1,0 +1,122 @@
+<!--
+Name: John
+Date: 10/04/2026
+-->
+
+
+<!--Gallary img 1 gotten from https://www.pexels.com/photo/cosplay-enthusiasts-at-anime-convention-in-costa-rica-29901209/-->
+<!--Gallary img 2 gotten from https://www.pexels.com/photo/friends-having-fun-playing-an-arcade-video-game-7915382/-->
+<!--Gallary img 3 gotten from https://www.pexels.com/photo/two-men-playing-video-game-7915427/-->
+<!--Gallary img 4 gotten from https://www.pexels.com/photo/men-cosplaying-gaara-and-lee-12695402/-->
+<!--Gallary img 5 gotten from https://www.pexels.com/photo/cosplayer-in-artistic-costume-at-costa-rica-convention-29901216/-->
+<!--Gallary img 6 gotten from https://www.pexels.com/photo/cosplay-character-in-san-jose-costa-rica-29901455/-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGC Gallary</title>
+    <link rel="stylesheet" href="CSS/GlobalStyleSheet.css">
+    <link rel="stylesheet" href="CSS/navStyles.css">
+</head>
+
+<body>
+    <script src="Script/gallary.js"></script>
+    <header>
+        <div id="headbar">
+            <div class="logo">
+                <img src="Images/Logo.png" alt="A Photo of our Logo">
+            </div>
+
+            <nav class="topnav" id="topnav">
+                <div class="topnav-inner">
+                    <div class="nav-links" id="navLinks">
+                        <a href="index.html">Home</a>
+                        <a href="Gallery.html">Gallery</a>
+                        <a href="Contacts.html">Contacts</a>
+                        <a href="Links.html">Links</a>
+                        <a href="Pannels.html">Pannels</a>
+                        <a href="Rules.html">Rules</a>
+                        <a href="CosplayContest.html">Cosplay Contest</a>
+                    </div>
+                    <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation menu"
+                        aria-controls="navLinks" aria-expanded="false">
+                        <!-- Inline SVG hamburger icon -->
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+        </div>
+
+
+    </header>
+
+    <main>
+        <br>
+        <div id="gallarydiv">
+            <h1>TGC Gallery</h1>
+            <p>
+                <img src="Images/gallaryImg/img1.jpg" alt="images of two people at a stall" id="mainImg">
+            </p>
+            <a href="#" id="link1"><img src="Images/gallaryImg/img1-sm.jpg"></a>
+            <a href="#" id="link2"><img src="Images/gallaryImg/img2-sm.jpg"></a>
+            <a href="#" id="link3"><img src="Images/gallaryImg/img3-sm.jpg"></a>
+            <p> Move cursor over image / picture you want to preview</p>
+            <a href="#" id="link4"><img src="Images/gallaryImg/img4-sm.jpg"></a>
+            <a href="#" id="link5"><img src="Images/gallaryImg/img5-sm.jpg"></a>
+            <a href="#" id="link6"><img src="Images/gallaryImg/img6-sm.jpg"></a>
+            <p>
+                <a href="#" id="prv">Previous </a>|<a href="#" id="next"> Next</a>
+            </p>
+        </div>
+        <br>
+    </main>
+
+    <footer>
+
+        <div id="address">
+            <h3>Address:</h3>
+            <p>Thurles</p>
+            <p>Well Street</p>
+            <p>E67E432</p>
+            <p>Tipperary</p>
+        </div>
+
+        <div id="Contact">
+            <h3>Contact Info:</h3>
+            <p>Email:<a href="mailto:TGC@email.com">TGC@email.com</a></p>
+            <p>Phone: 098 343 5637</p>
+
+        </div>
+
+        <div id="Links">
+            <h3>Pages:</h3>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="Gallery.html">Gallery</a></p>
+            <p><a href="Contacts.html">Contacts</a></p>
+            <p><a href="Links.html">Links</a></p>
+            <p><a href="Rules.html">Rules</a></p>
+            <p><a href="Pannels.html">Pannels</a></p>
+            <p><a href="CosplayContest.html">Cosplay Contest</a></p>
+        </div>
+    </footer>
+    </div>
+
+    <script>
+        document.querySelector('#link1').addEventListener('mouseover', swap);
+        document.querySelector('#link2').addEventListener('mouseover', swap);
+        document.querySelector('#link3').addEventListener('mouseover', swap);
+        document.querySelector('#link4').addEventListener('mouseover', swap);
+        document.querySelector('#link5').addEventListener('mouseover', swap);
+        document.querySelector('#link6').addEventListener('mouseover', swap);
+        document.querySelector('#next').addEventListener('click', next);
+        document.querySelector('#prv').addEventListener('click', previous);
+    </script>
+    <script src="Script/script.js"></script>
+</body>
+
+</html>

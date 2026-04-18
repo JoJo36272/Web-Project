@@ -1,0 +1,144 @@
+<!--
+Name: John
+Date: 10/04/2026
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGC Contacts</title>
+    <link rel="stylesheet" href="CSS/GlobalStyleSheet.css">
+    <link rel="stylesheet" href="CSS/navStyles.css">
+
+    <script src="Script/valadate.js"></script>
+    <script src="Script/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="headbar">
+            <div class="logo">
+                <img src="Images/Logo.png" alt="A Photo of our Logo">
+            </div>
+
+            <nav class="topnav" id="topnav">
+                <div class="topnav-inner">
+                    <div class="nav-links" id="navLinks">
+                        <a href="index.html">Home</a>
+                        <a href="Gallery.html">Gallery</a>
+                        <a href="Contacts.html">Contacts</a>
+                        <a href="Links.html">Links</a>
+                        <a href="Pannels.html">Pannels</a>
+                        <a href="Rules.html">Rules</a>
+                        <a href="CosplayContest.html">Cosplay Contest</a>
+                    </div>
+                    <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation menu"
+                        aria-controls="navLinks" aria-expanded="false">
+                        <!-- Inline SVG hamburger icon -->
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+        </div>
+
+
+    </header>
+
+    <main>
+        <br>
+        <form id="FromDetails" method="post" action="http://rdwd.atspace.cc/response.php">
+            <!--Name-->
+            <p>
+                <label for="name">Name:</label>
+                <input name="name" type="text" id="name"><span id="err1" class="errors"></span>
+            </p>
+            <!--Address-->
+            <p>
+                <label for="address">Address:</label>
+                <input name="address" type="text" id="address"><span id="err2" class="errors"></span>
+            </p>
+            <!--Mobile-->
+            <p>
+                <label for="mobile">Mobile number:</label>
+                <input type="text" name=" mobile" id="mobile"><span id="err3" class="errors"></span>
+            </p>
+            <!--Email-->
+            <p>
+                <label for="email1">Email Address:</label>
+                <input type="text" name="email1" id="email1"><span id="err4" class="errors"></span>
+
+            </p>
+            <!--Retype Email-->
+            <p>
+                <label for="email2">Retype Email Address:</label>
+                <input type="text" name="email2" id="email2"><span id="err5" class="errors"></span>
+
+            </p>
+            <!--Member-->
+            <p>
+                <label for="member">Member: </label>
+                <input type="radio" name="member" id="Member" value="yes" checked>
+            </P>
+            <!--non Member-->
+            <P>
+                <label for="memberNon">Non-Member: </label>
+                <input type="radio" name="member" id="Member" value="no">
+            </p>
+            <!--Query-->
+            <p>
+            <P>
+                <label for="query">Query/Comment:</label>
+            </P>
+            <textarea id="query" name="query" rows="3" cols="21"></textarea><span id="err8" class="errors"></span>
+            </p>
+            <!--Submit-->
+            <p>
+                <input type="submit" name="submit" id="submit" value="Submit">
+                <input type="reset" name="reset" id="reset" value="Reset">
+            </p>
+
+        </form>
+        <br>
+    </main>
+
+    <footer>
+
+        <div id="address">
+            <h3>Address:</h3>
+            <p>Thurles</p>
+            <p>Well Street</p>
+            <p>E67E432</p>
+            <p>Tipperary</p>
+        </div>
+
+        <div id="Contact">
+            <h3>Contact Info:</h3>
+            <p>Email:<a href="mailto:TGC@email.com">TGC@email.com</a></p>
+            <p>Phone: 098 343 5637</p>
+
+        </div>
+
+        <div id="Links">
+            <h3>Pages:</h3>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="Gallery.html">Gallery</a></p>
+            <p><a href="Contacts.html">Contacts</a></p>
+            <p><a href="Links.html">Links</a></p>
+            <p><a href="Rules.html">Rules</a></p>
+            <p><a href="Pannels.html">Pannels</a></p>
+            <p><a href="CosplayContest.html">Cosplay Contest</a></p>
+        </div>
+    </footer>
+    </div>
+
+    <script src="Script/script.js"></script>
+    <script src="Script/valadate.js"></script>
+</body>
+
+</html>
